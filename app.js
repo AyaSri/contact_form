@@ -5,7 +5,7 @@ const connectDB = require('./config/db');
 let cors = require('cors');
 
 // routes
-const forms = require('./routes/api/forms');
+const formRoutes = require('./routes/forms');
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.get('/', (req, res) => res.send('Hello world!'));
 
 
 // use Routes
-app.use('/api/forms', forms);
+app.use('/api/forms', formRoutes);
 
 const port = process.env.PORT || 8082;
 
