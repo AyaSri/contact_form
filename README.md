@@ -1,4 +1,4 @@
-# contact_form_backend
+# contact_form
 steps:
 1. clone the repository
 2. run "npm install"
